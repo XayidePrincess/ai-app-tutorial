@@ -1,0 +1,108 @@
+{
+    "cells": [
+        {
+            "language": "typescript",
+            "source": [
+                "const someArray = [2, 4, 8];\nlet someArraySquared = [];\n\nfor (let i = 0; i < someArray.length; i += 1) {\n\n  someArraySquared.push(someArray[i] * someArray[i]);\n\n}\nconsole.log(someArray, someArraySquared);  \n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "[ 2, 4, 8 ] [ 4, 16, 64 ]",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "const someArray = [2, 4, 8];\nlet someArraySquared = someArray.map(x => x * x);\nconsole.log(someArray, someArraySquared); "
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "[ 2, 4, 8 ] [ 4, 16, 64 ]",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "const someArray = [2, 4, 8];\nlet someArraySquared = [];\nfor (let n of someArray) {\n  someArraySquared.push(n * n);\n}\nconsole.log(someArray, someArraySquared);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "[ 2, 4, 8 ] [ 4, 16, 64 ]",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "for (let char of 'mantinta') { console.log(char + 2); }"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "m2",
+                                "a2",
+                                "n2",
+                                "t2",
+                                "i2",
+                                "n2",
+                                "t2",
+                                "a2",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "const someArray = [2, 4, 8];\nfor (let n of someArray) { console.log(n + n); }"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "4",
+                                "8",
+                                "16",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
